@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-namespace TrainingLambda
+﻿namespace TrainingLambda
 {
     /*
      * More examples: 
@@ -36,7 +32,12 @@ namespace TrainingLambda
 
             Console.WriteLine("\nLast animal in list");
             animals.Last().PrintInfo();
-      
+
+            Console.WriteLine("Animal type from user input");
+            string input = Console.ReadLine();
+            var result1 = animals.Where(x => x.Type == input).ToList();
+            result1.ForEach(x => x.PrintInfo());
+
         }
     }
 }
