@@ -38,6 +38,11 @@
             var result1 = animals.Where(x => x.Type == input).ToList();
             result1.ForEach(x => x.PrintInfo());
 
+            /* 
+             * create more examples
+             * use select and where in one 
+             */
+
         }
     }
 }
